@@ -6,11 +6,15 @@ import { BUSINESS_INFO } from "@/lib/constants";
 export function Navbar() {
   return (
     <nav className="border-b bg-white sticky top-0 z-50 shadow-sm">
-      <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+      <div className="container mx-auto px-4 py-2 flex items-center justify-between">
         {/* Logo - placeholder for now */}
-        <Link href="/" className="text-2xl font-bold text-blue-900">
-          Leader Garage Door
-        </Link>
+      <Link href="/" className="flex items-center -ml-24">
+  <img 
+    src="/logo.png" 
+    alt="Leader Garage Door Services" 
+    className="h-auto w-96 -my-30"
+  />
+</Link>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-6">
