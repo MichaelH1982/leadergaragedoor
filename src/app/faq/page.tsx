@@ -1,3 +1,5 @@
+import { LocalBusinessSchema } from "@/components/schema/LocalBusinessSchema";
+import { FAQPageSchema } from "@/components/schema/FAQPageSchema";
 import { BUSINESS_INFO } from "@/lib/constants";
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
@@ -11,6 +13,9 @@ import {
 export default function FAQPage() {
   return (
     <div className="min-h-screen">
+        <div className="min-h-screen">
+  <LocalBusinessSchema />
+  <FAQPageSchema />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-900 to-blue-800 text-white py-16">
         <div className="container mx-auto px-4">

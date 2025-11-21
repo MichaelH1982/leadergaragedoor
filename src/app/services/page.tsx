@@ -1,3 +1,5 @@
+import { LocalBusinessSchema } from "@/components/schema/LocalBusinessSchema";
+import { ServiceSchema } from "@/components/schema/ServiceSchema";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { SERVICES, BUSINESS_INFO } from "@/lib/constants";
@@ -68,6 +70,9 @@ const serviceDetails: { [key: string]: string[] } = {
 export default function ServicesPage() {
   return (
     <div className="min-h-screen">
+      <div className="min-h-screen">
+  <LocalBusinessSchema />
+  <ServiceSchema />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-900 to-blue-800 text-white py-16">
         <div className="container mx-auto px-4">
