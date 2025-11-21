@@ -7,7 +7,6 @@ import { Phone, Shield, Clock, Award, Heart, Users } from "lucide-react";
 export default function AboutPage() {
   return (
     <div className="min-h-screen">
-      <div className="min-h-screen">
   <LocalBusinessSchema />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-900 to-blue-800 text-white py-16">

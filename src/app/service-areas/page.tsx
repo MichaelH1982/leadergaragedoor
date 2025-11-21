@@ -1,3 +1,4 @@
+import { LocalBusinessSchema } from '@/components/schema/LocalBusinessSchema';
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { BUSINESS_INFO } from "@/lib/constants";
@@ -5,7 +6,8 @@ import { MapPin, Phone, CheckCircle } from "lucide-react";
 
 export default function ServiceAreasPage() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+      <LocalBusinessSchema />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-900 to-blue-800 text-white py-16">
         <div className="container mx-auto px-4">

@@ -13,7 +13,6 @@ import {
 export default function FAQPage() {
   return (
     <div className="min-h-screen">
-        <div className="min-h-screen">
   <LocalBusinessSchema />
   <FAQPageSchema />
       {/* Hero Section */}

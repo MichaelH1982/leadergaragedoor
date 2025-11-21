@@ -7,7 +7,6 @@ import { ContactCTA } from "@/components/home/ContactCTA";
 export default function Home() {
   return (
     <>
-    <div className="min-h-screen">
   <LocalBusinessSchema />
       <Hero />
       <ServicesGrid />
