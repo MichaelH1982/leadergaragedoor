@@ -96,20 +96,27 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Map Placeholder */}
-      <section className="py-16 bg-slate-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-8">Find Us</h2>
-          <div className="bg-slate-200 rounded-lg h-96 flex items-center justify-center">
-            <p className="text-slate-500 text-lg">
-              📍 Google Maps integration coming soon
-            </p>
-          </div>
-          <p className="text-center text-slate-600 mt-4">
-            Serving the greater Tampa Bay area
-          </p>
-        </div>
-      </section>
+      {/* Map */}
+<section className="py-16 bg-slate-50">
+  <div className="container mx-auto px-4">
+    <h2 className="text-3xl font-bold text-center mb-8">Our Service Area</h2>
+    <div className="rounded-lg overflow-hidden shadow-lg">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113032.77891347678!2d-82.87379486562503!3d28.01959020000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2e1e0a9d3f3e5%3A0x77f0e0d8c5c0e0e0!2sDunedin%2C%20FL!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+        width="100%"
+        height="450"
+        style={{ border: 0 }}
+        allowFullScreen
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+        title="Leader Garage Door Service Area Map"
+      />
+    </div>
+    <p className="text-center text-slate-600 mt-4">
+      Serving Dunedin, Clearwater, Tampa, and the greater Tampa Bay area
+    </p>
+  </div>
+</section>
     </div>
   );
 }

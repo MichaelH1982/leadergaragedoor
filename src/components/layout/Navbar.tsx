@@ -19,14 +19,17 @@ export function Navbar() {
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-6">
           <Link href="/services" className="hover:text-blue-600 font-medium">
-            Services
-          </Link>
-          <Link href="/service-areas" className="hover:text-blue-600 font-medium">
-            Service Areas
-          </Link>
-          <Link href="/contact" className="hover:text-blue-600 font-medium">
-            Contact
-          </Link>
+  Services
+</Link>
+<Link href="/service-areas" className="hover:text-blue-600 font-medium">
+  Service Areas
+</Link>
+<Link href="/about" className="hover:text-blue-600 font-medium">
+  About
+</Link>
+<Link href="/contact" className="hover:text-blue-600 font-medium">
+  Contact
+</Link>
           
           <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
             <a href={`tel:${BUSINESS_INFO.phoneRaw}`} className="flex items-center gap-2">

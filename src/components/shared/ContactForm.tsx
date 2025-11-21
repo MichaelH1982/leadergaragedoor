@@ -16,17 +16,42 @@ export function ContactForm() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setError(false);
 
-    // Simulate form submission (we'll add Web3Forms integration later)
-    setTimeout(() => {
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "37d20b2f-468e-40a2-9529-aa922ee8cf9f",
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          service: formData.service,
+          message: formData.message,
+          from_name: "Leader Garage Door Website",
+          subject: "New Contact Form Submission"
+        }),
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+        setFormData({ name: "", email: "", phone: "", service: "", message: "" });
+      } else {
+        setError(true);
+      }
+    } catch (err) {
+      setError(true);
+    } finally {
       setIsSubmitting(false);
-      setSubmitted(true);
-      setFormData({ name: "", email: "", phone: "", service: "", message: "" });
-    }, 1000);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -52,6 +77,14 @@ export function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
+      {error && (
+        <div className="bg-red-50 border-2 border-red-500 rounded-lg p-4 text-center">
+          <p className="text-red-700">
+            Something went wrong. Please try again or call us directly.
+          </p>
+        </div>
+      )}
+
       {/* Name */}
       <div>
         <Label htmlFor="name">Name *</Label>

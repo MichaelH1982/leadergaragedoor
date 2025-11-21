@@ -91,20 +91,27 @@ export default function ServiceAreasPage() {
         </div>
       </section>
 
-      {/* Map Placeholder Section */}
-      <section className="py-16 bg-slate-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-8">Our Service Area Coverage</h2>
-          <div className="bg-slate-200 rounded-lg h-96 flex items-center justify-center">
-            <p className="text-slate-500 text-lg">
-              📍 Map integration coming soon
-            </p>
-          </div>
-          <p className="text-center text-slate-600 mt-4">
-            Serving Pinellas, Hillsborough, and Pasco Counties
-          </p>
-        </div>
-      </section>
+      {/* Map Section */}
+<section className="py-16 bg-slate-50">
+  <div className="container mx-auto px-4">
+    <h2 className="text-3xl font-bold text-center mb-8">Our Service Area Coverage</h2>
+    <div className="rounded-lg overflow-hidden shadow-lg">
+      <iframe
+  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d180000!2d-82.5!3d28.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+  width="100%"
+  height="450"
+  style={{ border: 0 }}
+  allowFullScreen
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+  title="Tampa Bay Service Area Map"
+/>
+    </div>
+    <p className="text-center text-slate-600 mt-4">
+      Serving Pinellas, Hillsborough, and Pasco Counties
+    </p>
+  </div>
+</section>
     </div>
   );
 }
