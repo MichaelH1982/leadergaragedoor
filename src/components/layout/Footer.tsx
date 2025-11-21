@@ -37,6 +37,11 @@ export function Footer() {
         Contact Us
       </Link>
     </li>
+    <li>
+  <Link href="/faq" className="text-slate-300 hover:text-white text-sm">
+    FAQ
+  </Link>
+</li>
   </ul>
 </div>
           
