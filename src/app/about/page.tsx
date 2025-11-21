@@ -130,7 +130,7 @@ export default function AboutPage() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-6 text-center">Our Commitment to You</h2>
             <div className="bg-blue-50 rounded-lg p-8">
-              <ul className="space-y-4 text-lg text-slate-700">
+              <ul className="space-y-4 text-lg text-slate-700 max-w-md mx-auto">
                 <li className="flex items-start gap-3">
                   <span className="text-blue-600 font-bold text-xl">✓</span>
                   <span>We arrive on time and respect your property</span>

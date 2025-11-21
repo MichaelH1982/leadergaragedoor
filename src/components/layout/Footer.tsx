@@ -14,26 +14,31 @@ export function Footer() {
           </div>
           
           {/* Quick Links */}
-          <div>
-            <h3 className="font-bold text-lg mb-4">Quick Links</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link href="/services" className="text-slate-300 hover:text-white text-sm">
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link href="/service-areas" className="text-slate-300 hover:text-white text-sm">
-                  Service Areas
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="text-slate-300 hover:text-white text-sm">
-                  Contact Us
-                </Link>
-              </li>
-            </ul>
-          </div>
+<div>
+  <h3 className="font-bold text-lg mb-4">Quick Links</h3>
+  <ul className="space-y-2">
+    <li>
+      <Link href="/about" className="text-slate-300 hover:text-white text-sm">
+        About Us
+      </Link>
+    </li>
+    <li>
+      <Link href="/services" className="text-slate-300 hover:text-white text-sm">
+        Services
+      </Link>
+    </li>
+    <li>
+      <Link href="/service-areas" className="text-slate-300 hover:text-white text-sm">
+        Service Areas
+      </Link>
+    </li>
+    <li>
+      <Link href="/contact" className="text-slate-300 hover:text-white text-sm">
+        Contact Us
+      </Link>
+    </li>
+  </ul>
+</div>
           
           {/* Service Areas */}
           <div>
