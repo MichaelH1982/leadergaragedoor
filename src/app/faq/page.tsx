@@ -9,7 +9,21 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import type { Metadata } from 'next';
 
+export const metadata: Metadata = {
+  title: 'FAQ | Garage Door Questions Answered | Leader Garage Door Services',
+  description: 'Common questions about garage door repair, installation, maintenance, and pricing. Learn about our services, response times, and what to expect. Call (727) 855-3715.',
+  keywords: ['garage door FAQ', 'garage door questions', 'garage door repair cost', 'how long garage door repair', 'garage door maintenance tips'],
+  openGraph: {
+    title: 'FAQ | Leader Garage Door',
+    description: 'Answers to common garage door repair and installation questions.',
+    url: 'https://leadergaragedoor.vercel.app/faq',
+    siteName: 'Leader Garage Door Services',
+    locale: 'en_US',
+    type: 'website',
+  },
+};
 export default function FAQPage() {
   return (
     <div className="min-h-screen">

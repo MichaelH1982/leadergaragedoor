@@ -37,10 +37,15 @@ export function Footer() {
         Contact Us
       </Link>
     </li>
-    <li>
-  <Link href="/faq" className="text-slate-300 hover:text-white text-sm">
+   <li>
+<Link href="/faq" className="text-slate-300 hover:text-white text-sm">
     FAQ
-  </Link>
+</Link>
+</li>
+<li>
+<Link href="/gallery" className="text-slate-300 hover:text-white text-sm">
+    Gallery
+</Link>
 </li>
   </ul>
 </div>

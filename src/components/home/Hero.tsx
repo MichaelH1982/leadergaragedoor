@@ -14,10 +14,15 @@ export function Hero() {
           </div>
 
           {/* Main Headline */}
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+<h1 className="text-5xl md:text-6xl font-bold mb-4 leading-tight">
             Leader in Quality.<br />
             Leader in Service.
-          </h1>
+</h1>
+
+{/* Veteran-Owned Statement */}
+<p className="text-xl md:text-2xl font-semibold text-white mb-6">
+  Proudly Veteran-Owned & Operated
+</p>
 
           {/* Subheadline */}
           <p className="text-xl md:text-2xl mb-8 text-blue-100">

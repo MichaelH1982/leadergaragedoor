@@ -2,7 +2,21 @@ import { LocalBusinessSchema } from '@/components/schema/LocalBusinessSchema';
 import { ContactForm } from "@/components/shared/ContactForm";
 import { BUSINESS_INFO } from "@/lib/constants";
 import { Phone, Mail, Clock, MapPin } from "lucide-react";
+import type { Metadata } from 'next';
 
+export const metadata: Metadata = {
+  title: 'Contact Us | Free Estimates | Leader Garage Door Services',
+  description: 'Contact Leader Garage Door Services for free estimates on garage door repair and installation. Call (727) 855-3715 or fill out our contact form. Serving Tampa Bay.',
+  keywords: ['contact garage door service', 'free garage door estimate', 'garage door quote Tampa Bay', 'call garage door repair'],
+  openGraph: {
+    title: 'Contact Us | Leader Garage Door',
+    description: 'Get a free estimate on garage door repair and installation. Serving Tampa Bay.',
+    url: 'https://leadergaragedoor.vercel.app/contact',
+    siteName: 'Leader Garage Door Services',
+    locale: 'en_US',
+    type: 'website',
+  },
+};
 export default function ContactPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white py-16">

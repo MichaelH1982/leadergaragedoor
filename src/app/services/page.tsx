@@ -4,7 +4,21 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/com
 import { Button } from "@/components/ui/button";
 import { SERVICES, BUSINESS_INFO } from "@/lib/constants";
 import { Phone, Wrench, Settings, Home, Shield, Zap, PanelTop, Calendar, CheckCircle } from "lucide-react";
+import type { Metadata } from 'next';
 
+export const metadata: Metadata = {
+  title: 'Garage Door Services | Repair, Installation & Maintenance | Leader Garage Door',
+  description: 'Professional garage door repair, installation, spring replacement, opener installation, and preventive maintenance in Tampa Bay. Free estimates. Call (727) 855-3715.',
+  keywords: ['garage door repair', 'garage door installation', 'spring replacement', 'opener installation', 'garage door maintenance', 'Tampa Bay'],
+  openGraph: {
+    title: 'Garage Door Services | Leader Garage Door',
+    description: 'Professional garage door repair, installation, and maintenance in Tampa Bay.',
+    url: 'https://leadergaragedoor.vercel.app/services',
+    siteName: 'Leader Garage Door Services',
+    locale: 'en_US',
+    type: 'website',
+  },
+};
 const iconMap: { [key: string]: any } = {
   "repair-installation": Wrench,
   "opener": Settings,

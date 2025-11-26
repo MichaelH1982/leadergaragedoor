@@ -3,7 +3,21 @@ import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { BUSINESS_INFO } from "@/lib/constants";
 import { MapPin, Phone, CheckCircle } from "lucide-react";
+import type { Metadata } from 'next';
 
+export const metadata: Metadata = {
+  title: 'Service Areas | Pinellas, Hillsborough & Pasco Counties | Leader Garage Door',
+  description: 'Garage door services in Dunedin, Clearwater, Tampa, St. Petersburg, Palm Harbor, Tarpon Springs, and surrounding areas. Fast response throughout Tampa Bay. Call (727) 855-3715.',
+  keywords: ['garage door Dunedin', 'garage door Clearwater', 'garage door Tampa', 'garage door St Petersburg', 'Pinellas County', 'Hillsborough County', 'Pasco County'],
+  openGraph: {
+    title: 'Service Areas | Leader Garage Door',
+    description: 'Serving Pinellas, Hillsborough, and Pasco Counties with professional garage door services.',
+    url: 'https://leadergaragedoor.vercel.app/service-areas',
+    siteName: 'Leader Garage Door Services',
+    locale: 'en_US',
+    type: 'website',
+  },
+};
 export default function ServiceAreasPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">

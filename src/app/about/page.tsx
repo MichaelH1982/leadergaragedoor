@@ -3,7 +3,21 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { BUSINESS_INFO } from "@/lib/constants";
 import { Phone, Shield, Clock, Award, Heart, Users } from "lucide-react";
+import type { Metadata } from 'next';
 
+export const metadata: Metadata = {
+  title: 'About Us | Veteran-Owned Garage Door Company | Leader Garage Door',
+  description: 'Leader Garage Door Services is a veteran-owned and operated garage door company serving Tampa Bay. Committed to integrity, quality workmanship, and exceptional customer service.',
+  keywords: ['veteran owned garage door', 'garage door company Tampa Bay', 'about Leader Garage Door', 'family owned garage door'],
+  openGraph: {
+    title: 'About Us | Leader Garage Door',
+    description: 'Veteran-owned and operated garage door company serving Tampa Bay with integrity and quality.',
+    url: 'https://leadergaragedoor.vercel.app/about',
+    siteName: 'Leader Garage Door Services',
+    locale: 'en_US',
+    type: 'website',
+  },
+};
 export default function AboutPage() {
   return (
     <div className="min-h-screen">

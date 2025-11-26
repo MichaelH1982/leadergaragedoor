@@ -33,6 +33,9 @@ export function Navbar() {
 <Link href="/faq" className="text-slate-700 hover:text-blue-600 font-medium">
   FAQ
 </Link>
+<Link href="/gallery" className="text-slate-700 hover:text-blue-600 font-medium">
+  Gallery
+</Link>
           
           <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
             <a href={`tel:${BUSINESS_INFO.phoneRaw}`} className="flex items-center gap-2">
