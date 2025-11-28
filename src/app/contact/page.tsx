@@ -3,6 +3,7 @@ import { ContactForm } from "@/components/shared/ContactForm";
 import { BUSINESS_INFO } from "@/lib/constants";
 import { Phone, Mail, Clock, MapPin } from "lucide-react";
 import type { Metadata } from 'next';
+import { CalendlyWidget } from "@/components/shared/CalendlyWidget";
 
 export const metadata: Metadata = {
   title: 'Contact Us | Free Estimates | Leader Garage Door Services',
@@ -112,6 +113,20 @@ export default function ContactPage() {
         </div>
       </section>
 
+ {/* Schedule Appointment */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl font-bold mb-4">Schedule Your Free Estimate</h2>
+            <p className="text-lg text-slate-600 mb-8">
+              Choose a convenient time and we'll come to you for a free, no-obligation estimate.
+            </p>
+          </div>
+          <div className="max-w-4xl mx-auto">
+            <CalendlyWidget />
+          </div>
+        </div>
+      </section>
       {/* Map */}
 <section className="py-16 bg-slate-50">
   <div className="container mx-auto px-4">
