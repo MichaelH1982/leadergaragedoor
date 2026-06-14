@@ -4,11 +4,11 @@ export function LocalBusinessSchema() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": "https://leadergaragedoor.vercel.app",
+    "@id": "https://leadergaragedoor.biz",
     "name": "Leader Garage Door Services",
-    "image": "https://leadergaragedoor.vercel.app/logo.png",
-    "logo": "https://leadergaragedoor.vercel.app/logo.png",
-    "url": "https://leadergaragedoor.vercel.app",
+    "image": "https://leadergaragedoor.biz/logo.png",
+    "logo": "https://leadergaragedoor.biz/logo.png",
+    "url": "https://leadergaragedoor.biz",
     "telephone": BUSINESS_INFO.phoneRaw,
     "priceRange": "$$",
     "address": {
