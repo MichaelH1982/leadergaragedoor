@@ -23,6 +23,11 @@ export function Footer() {
       </Link>
     </li>
     <li>
+  <Link href="/privacy-policy" className="text-slate-300 hover:text-white text-sm">
+    Privacy Policy
+  </Link>
+</li>
+    <li>
       <Link href="/services" className="text-slate-300 hover:text-white text-sm">
         Services
       </Link>
