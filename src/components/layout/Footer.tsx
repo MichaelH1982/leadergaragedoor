@@ -1,3 +1,5 @@
+"use client";
+
 import { BUSINESS_INFO } from "@/lib/constants";
 import Link from "next/link";
 import Script from "next/script";
@@ -86,10 +88,17 @@ export function Footer() {
         </div>
       </div>
 
-      <Script src="https://dunedinfl.chambermaster.com/Content/Script/Member.js" strategy="afterInteractive" />
-      <Script id="chamber-widget-init" strategy="afterInteractive">
-        {`new MNI.Widgets.Member("mni-membership-639210142658324773",{member:8924,styleTemplate:"#@id{text-align:center;position:relative}#@id .mn-widget-member-name{font-weight:700}#@id .mn-widget-member-logo{max-width:100%}"}).create();`}
-      </Script>
+      <Script
+        src="https://dunedinfl.chambermaster.com/Content/Script/Member.js"
+        strategy="afterInteractive"
+        onLoad={() => {
+          new (window as any).MNI.Widgets.Member("mni-membership-639210142658324773", {
+            member: 8924,
+            styleTemplate:
+              "#@id{text-align:center;position:relative}#@id .mn-widget-member-name{font-weight:700}#@id .mn-widget-member-logo{max-width:100%}",
+          }).create();
+        }}
+      />
     </footer>
   );
 }
