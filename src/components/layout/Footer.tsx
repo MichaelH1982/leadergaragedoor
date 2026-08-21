@@ -99,6 +99,10 @@ export function Footer() {
           }).create();
         }}
       />
+      <Script
+        src="https://cdn.ywxi.net/js/1.js"
+        strategy="afterInteractive"
+      />
     </footer>
   );
 }
