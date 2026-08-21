@@ -82,7 +82,7 @@ export function Footer() {
         <div className="border-t border-slate-700 mt-8 pt-8 flex flex-col md:flex-row items-center justify-center gap-6">
           <div id="mni-membership-639210142658324773"></div>
           
-            href="https://www.bbb.org/us/fl/dunedin/profile/garage-doors/leader-garage-door-services-llc-0653-90461299/#sealclick"
+          href="https://www.bbb.org/us/fl/dunedin/profile/garage-doors/leader-garage-door-services-llc-0653-90461299/#sealclick"
             target="_blank"
             rel="nofollow noopener noreferrer"
           >
