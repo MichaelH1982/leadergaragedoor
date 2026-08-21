@@ -86,8 +86,8 @@ export function Footer() {
         </div>
       </div>
 
-      <Script src="https://dunedinfl.chambermaster.com/Content/Script/Member.js" strategy="lazyOnload" />
-      <Script id="chamber-widget-init" strategy="lazyOnload">
+      <Script src="https://dunedinfl.chambermaster.com/Content/Script/Member.js" strategy="afterInteractive" />
+      <Script id="chamber-widget-init" strategy="afterInteractive">
         {`new MNI.Widgets.Member("mni-membership-639210142658324773",{member:8924,styleTemplate:"#@id{text-align:center;position:relative}#@id .mn-widget-member-name{font-weight:700}#@id .mn-widget-member-logo{max-width:100%}"}).create();`}
       </Script>
     </footer>
