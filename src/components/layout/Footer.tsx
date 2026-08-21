@@ -7,14 +7,12 @@ export function Footer() {
     <footer className="bg-slate-900 text-white py-12">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8">
-          {/* Company Info */}
           <div>
             <h3 className="font-bold text-lg mb-4">Leader Garage Door Services</h3>
             <p className="text-slate-300 text-sm mb-2">License #: {BUSINESS_INFO.license}</p>
             <p className="text-slate-300 text-sm">{BUSINESS_INFO.hours}</p>
           </div>
 
-          {/* Quick Links */}
           <div>
             <h3 className="font-bold text-lg mb-4">Quick Links</h3>
             <ul className="space-y-2">
@@ -56,7 +54,6 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Service Areas */}
           <div>
             <h3 className="font-bold text-lg mb-4">Service Areas</h3>
             <ul className="text-slate-300 text-sm space-y-2">
@@ -66,7 +63,6 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Contact */}
           <div>
             <h3 className="font-bold text-lg mb-4">Contact</h3>
             <p className="text-slate-300 text-sm mb-2">
@@ -78,19 +74,10 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Certifications & Memberships */}
         <div className="border-t border-slate-700 mt-8 pt-8 flex flex-col md:flex-row items-center justify-center gap-6">
           <div id="mni-membership-639210142658324773"></div>
-          
-          href="https://www.bbb.org/us/fl/dunedin/profile/garage-doors/leader-garage-door-services-llc-0653-90461299/#sealclick"
-            target="_blank"
-            rel="nofollow noopener noreferrer"
-          >
-            <img
-              src="https://seal-westflorida.bbb.org/seals/blue-seal-150-110-bbb-90461299.png"
-              style={{ border: 0 }}
-              alt="Leader Garage Door Services LLC BBB Business Review"
-            />
+          <a href="https://www.bbb.org/us/fl/dunedin/profile/garage-doors/leader-garage-door-services-llc-0653-90461299/#sealclick" target="_blank" rel="nofollow noopener noreferrer">
+            <img src="https://seal-westflorida.bbb.org/seals/blue-seal-150-110-bbb-90461299.png" style={{ border: 0 }} alt="Leader Garage Door Services LLC BBB Business Review" />
           </a>
         </div>
 
@@ -99,10 +86,7 @@ export function Footer() {
         </div>
       </div>
 
-      <Script
-        src="https://dunedinfl.chambermaster.com/Content/Script/Member.js"
-        strategy="lazyOnload"
-      />
+      <Script src="https://dunedinfl.chambermaster.com/Content/Script/Member.js" strategy="lazyOnload" />
       <Script id="chamber-widget-init" strategy="lazyOnload">
         {`new MNI.Widgets.Member("mni-membership-639210142658324773",{member:8924,styleTemplate:"#@id{text-align:center;position:relative}#@id .mn-widget-member-name{font-weight:700}#@id .mn-widget-member-logo{max-width:100%}"}).create();`}
       </Script>
